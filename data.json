@@ -1,0 +1,142 @@
+[
+    {
+        "id": 1,
+        "name": "Invicta Men's Pro Diver",
+        "img": "https://m.media-amazon.com/images/I/71e04Q53xlL._AC_UY879_.jpg",
+        "price": 6072,
+        "cat": "Dress"
+    },
+    {
+        "id": 2,
+        "name": "Timex Men's Expedition Scout",
+        "img": "https://m.media-amazon.com/images/I/91WvnZ1g40L._AC_UY879_.jpg",
+        "price": 2993,
+        "cat": "Sport"
+    },
+    {
+        "id": 3,
+        "name": "Casio Classic Resin Strap",
+        "img": "https://m.media-amazon.com/images/I/51Nk5SEBARL._AC_UY879_.jpg",
+        "price": 1558,
+        "cat": "Sport"
+    },
+    {
+        "id": 4,
+        "name": "Garmin Venu Smartwatch",
+        "img": "https://m.media-amazon.com/images/I/51kyjYuOZhL._AC_SL1000_.jpg",
+        "price": 8241,
+        "cat": "Casual"
+    },
+    {
+        "id": 5,
+        "name": "Fossil Men's Grant Stainless Steel",
+        "img": "https://m.media-amazon.com/images/I/71e04Q53xlL._AC_UY879_.jpg",
+        "price": 9137,
+        "cat": "Casual"
+    },
+    {
+        "id": 6,
+        "name": "Seiko Men's SNK809",
+        "img": "https://m.media-amazon.com/images/I/91WvnZ1g40L._AC_UY879_.jpg",
+        "price": 1173,
+        "cat": "Dress"
+    },
+    {
+        "id": 7,
+        "name": "Citizen Eco-Drive Promaster",
+        "img": "https://m.media-amazon.com/images/I/51Nk5SEBARL._AC_UY879_.jpg",
+        "price": 7357,
+        "cat": "Sport"
+    },
+    {
+        "id": 8,
+        "name": "Tissot Men's PRX",
+        "img": "https://m.media-amazon.com/images/I/51kyjYuOZhL._AC_SL1000_.jpg",
+        "price": 3134,
+        "cat": "Dress"
+    },
+    {
+        "id": 9,
+        "name": "Hamilton Khaki Field",
+        "img": "https://m.media-amazon.com/images/I/71e04Q53xlL._AC_UY879_.jpg",
+        "price": 4599,
+        "cat": "Casual"
+    },
+    {
+        "id": 10,
+        "name": "Suunto Core",
+        "img": "https://m.media-amazon.com/images/I/91WvnZ1g40L._AC_UY879_.jpg",
+        "price": 5692,
+        "cat": "Sport"
+    },
+    {
+        "id": 11,
+        "name": "Apple Watch Series 6",
+        "img": "https://m.media-amazon.com/images/I/51Nk5SEBARL._AC_UY879_.jpg",
+        "price": 8180,
+        "cat": "Smart"
+    },
+    {
+        "id": 12,
+        "name": "Samsung Galaxy Watch 3",
+        "img": "https://m.media-amazon.com/images/I/51kyjYuOZhL._AC_SL1000_.jpg",
+        "price": 7012,
+        "cat": "Smart"
+    },
+    {
+        "id": 13,
+        "name": "Garmin Fenix 6",
+        "img": "https://m.media-amazon.com/images/I/71e04Q53xlL._AC_UY879_.jpg",
+        "price": 4467,
+        "cat": "Smart"
+    },
+    {
+        "id": 14,
+        "name": "Rolex Submariner",
+        "img": "https://m.media-amazon.com/images/I/91WvnZ1g40L._AC_UY879_.jpg",
+        "price": 6239,
+        "cat": "Luxury"
+    },
+    {
+        "id": 15,
+        "name": "Omega Seamaster",
+        "img": "https://m.media-amazon.com/images/I/51Nk5SEBARL._AC_UY879_.jpg",
+        "price": 5793,
+        "cat": "Luxury"
+    },
+    {
+        "id": 16,
+        "name": "Tag Heuer Carrera",
+        "img": "https://m.media-amazon.com/images/I/51kyjYuOZhL._AC_SL1000_.jpg",
+        "price": 7429,
+        "cat": "Luxury"
+    },
+    {
+        "id": 17,
+        "name": "Timex Weekender",
+        "img": "https://m.media-amazon.com/images/I/51Nk5SEBARL._AC_UY879_.jpg",
+        "price": 2962,
+        "cat": "Casual"
+    },
+    {
+        "id": 18,
+        "name": "Rolex Daytona",
+        "img": "https://m.media-amazon.com/images/I/91WvnZ1g40L._AC_UY879_.jpg",
+        "price": 3777,
+        "cat": "Luxury"
+    },
+    {
+        "id": 19,
+        "name": "Casio G-Shock DW5600E",
+        "img": "https://m.media-amazon.com/images/I/71e04Q53xlL._AC_UY879_.jpg",
+        "price": 9861,
+        "cat": "Sport"
+    },
+    {
+        "id": 20,
+        "name": "Breitling Navitimer",
+        "img": "https://m.media-amazon.com/images/I/51kyjYuOZhL._AC_SL1000_.jpg",
+        "price": 8302,
+        "cat": "Luxury"
+    }
+]
