@@ -4,8 +4,9 @@ fetch('data.json')
         const productsContainer = document.querySelector(".products");
         const searchInput = document.querySelector(".search");
         const categoriesContainer = document.querySelector(".cats");
-        const priceRange = document.querySelector(".priceRange");
-        const priceValue = document.querySelector(".priceValue");
+        const minPriceInput = document.querySelector(".minPrice");
+        const maxPriceInput = document.querySelector(".maxPrice");
+        const filterPriceButton = document.querySelector(".filterPrice");
 
         const displayProducts = (filteredProducts) => {
             productsContainer.innerHTML = filteredProducts.map(
@@ -17,14 +18,15 @@ fetch('data.json')
                     <span class="priceText">$${product.price}</span>
                 </div>
                 `
-            ).join('')
-        }
+            ).join('');
+        };
 
+        // Initial product display
         displayProducts(data);
 
+        // Search functionality
         searchInput.addEventListener('keyup', (e) => {
             const value = e.target.value.toLowerCase();
-
             if (value) {
                 displayProducts(data.filter(item => item.name.toLowerCase().includes(value)));
             } else {
@@ -32,40 +34,28 @@ fetch('data.json')
             }
         });
 
+        // Set categories
         const setCategories = () => {
             const allCats = data.map(item => item.cat);
             const categories = [
-                "All", ...allCats.filter((item, i) => {
-                return allCats.indexOf(item) === i;
-                })
+                "All", ...allCats.filter((item, i) => allCats.indexOf(item) === i)
             ];
 
             categoriesContainer.innerHTML = categories.map((cat) => `<span class="cat">${cat}</span>`).join("");
 
             categoriesContainer.addEventListener("click", (e) => {
                 const selectedCat = e.target.textContent;
-
                 selectedCat === "All" ? displayProducts(data) : displayProducts(data.filter((item) => item.cat === selectedCat));
             });
-        }
+        };
 
         setCategories();
 
-        const setPrices = () => {
-            const priceList = data.map(item => item.price);
-            const minPrice = Math.min(...priceList);
-            const maxPrice = Math.max(...priceList);
+        // Price filtering
+        filterPriceButton.addEventListener("click", () => {
+            const minPrice = parseFloat(minPriceInput.value) || 0;
+            const maxPrice = parseFloat(maxPriceInput.value) || Infinity;
 
-            priceRange.min = minPrice;
-            priceRange.max = maxPrice;
-            priceRange.value = maxPrice;
-            priceValue.textContent = "$" + maxPrice;
-
-            priceRange.addEventListener("input", (e) => {
-                priceValue.textContent = "$" + e.target.value;
-                displayProducts(data.filter((item) => item.price <= e.target.value));
-            });
-        }
-
-        setPrices();
+            displayProducts(data.filter((item) => item.price >= minPrice && item.price <= maxPrice));
+        });
     });
